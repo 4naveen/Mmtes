@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/train_back"
+    tools:context="com.project.lorvent.mmtes.FavouriteActivity">
+    <include
+        layout="@layout/app_bar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Source Station"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:textColor="#000"
+        android:textSize="18sp"
+        />
+    <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+        android:id="@+id/SearchableSpinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:ShowBorders="true"
+        app:BordersSize="1dp"
+        android:layout_marginLeft="20dp"
+        app:RevealViewBackgroundColor="@android:color/secondary_text_dark"
+        app:SearchViewBackgroundColor="@android:color/secondary_text_dark"
+        android:layout_marginRight="20dp"
+        app:RevealEmptyText="Touch to select"
+        app:BoarderColor="@color/colorPrimary"
+        app:SpinnerExpandHeight="250dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:textColor="#000"
+        android:text="Destination Station"
+        android:textSize="18sp"
+
+        />
+    <gr.escsoft.michaelprimez.searchablespinner.SearchableSpinner
+        android:id="@+id/SearchableSpinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:ShowBorders="true"
+        app:BordersSize="1dp"
+        app:RevealViewBackgroundColor="@android:color/secondary_text_dark"
+        app:SearchViewBackgroundColor="@android:color/secondary_text_dark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:RevealEmptyText="Touch to select"
+        app:BoarderColor="@color/colorPrimary"
+        app:SpinnerExpandHeight="250dp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:id="@+id/favourite"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#ffffff"
+        android:backgroundTint="#0D47A1"
+        android:text="Set As Favourite"/>
+
+</LinearLayout>
